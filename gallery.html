@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Gallery</title>
+    <style>
+        * {
+          box-sizing: border-box;
+         }
+         .glavno {
+            max-width: 1000px;
+            margin: auto;
+         }
+        .switch{
+            position: absolute;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            top: 5%;
+            left: 90%;
+            transform: translate(-50%,-50%);
+          }
+          .row {
+            margin: 8px -16px;
+        }
+        .row,.row > .column {
+            padding: 8px;
+        }
+        .column {
+            float: left;
+            width: 25%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+       .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 900px) {
+           .column {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 687px) {
+           .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script type="text/JavaScript" src="/js/main.js"></script>
+
+        <div class="navbar">
+            <a href="/" class="logo">Mimosvit<span>Photography</span></a>
+
+
+            <div id="nav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                 
+                <div class="first">
+                    <a href="about.html">About</a>
+                    <a href="service.html">Service</a>
+                    <a href="blog.html">Review</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="b">
+              <label class="switch" title="Click to change the mode">
+              <input type="checkbox" onclick="myFunction()">
+              <span class="slider round"></span>
+              </label>
+          </div>
+
+            <span class="menu" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <div class="te">
+            <h2>Welcome to my virtual gallery</h2>
+        </div>
+        <div class="glavno">
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                      <img src="/images/2.jpg" alt="Flowers" style="width:100%">
+                      <h3>Flowers</h3>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                      <img src="/images/7.jpg" alt="Mountains" style="width:100%">
+                      <h3>Forever</h3>
+                     </div>
+                  </div>
+                <div class="column">
+                  <div class="content">
+                  <img src="/images/WhatsApp Image 2021-12-19 at 15.57.03.jpeg" alt="Lights" style="width:100%">
+                    <h3>Never too dark for love</h3>
+                  </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                      <img src="/images/9.jpg" alt="Mountains" style="width:100%">
+                      <h3>Forever</h3>
+                      </div>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                      <img src="/images/99.jpg" alt="Mountains" style="width:100%">
+                      <h3>Forever</h3>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                      <img src="/images/WhatsApp Image 2021-12-19 at 15.57.08 (1).jpeg" alt="Mountains" style="width:100%">
+                      <h3>Snow</h3>
+                    </div>
+                  </div>
+                <div class="column">
+                    <div class="content">
+                      <img src="/images/sisterhoodag.jpg" alt="Mountains" style="width:100%">
+                      <h3>Sisterhood</h3>
+                      </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                      <img src="/images/DSC_7565 (1).jpg" alt="Mountains" style="width:100%">
+                      <h3>B&W</h3>
+                     </div>
+                  </div> 
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                      <img src="/images/DSC_7563.jpg" alt="Mountains" style="width:100%">
+                      <h3>Pure happiness</h3>
+                      </div>
+                  </div>
+                <div class="column">
+                    <div class="content">
+                      <img src="/images/DSC_9247 (1).jpg" alt="Mountains" style="width:100%">
+                      <h3>B&W</h3>
+                     </div>
+                  </div>
+                <div class="column">
+                    <div class="content">
+                    <img src="/images/DSC_7519.jpg" alt="Lights" style="width:100%">
+                      <h3>White & Black photos</h3>
+                     </div>
+                  </div>
+                <div class="column">
+                  <div class="content">
+                  <img src="/images/WhatsApp Image 2021-12-19 at 15.57.07.jpeg" alt="Nature" style="width:100%">
+                    <h3>Winter wedding</h3>
+                    </div>
+                </div>
+            </div>
+             <div class="row">
+                <div class="column">
+                    <div class="content">
+                      <img src="/images/DSC_8729.jpg" alt="children" style="width:100%">
+                      <h3>Can you hear the children smiling?</h3>
+                   </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                      <img src="/images/3.jpg" alt="Mountains" style="width:100%">
+                      <h3>Catch the moment</h3>
+                 </div>
+                  </div>
+                <div class="column">
+                    <div class="content">
+                      <img src="/images/4.jpg" alt="Mountains" style="width:100%">
+                      <h3>Catch the moment</h3>
+                     </div>
+                  </div>
+                <div class="column">
+                  <div class="content">
+                  <img src="/images/jajce2.png" alt="Mountains" style="width:100%">
+                    <h3>Mlinćići, Jajce</h3>
+                   </div>
+                </div>
+             </div>     
+              <div class="content">
+                <img src="/images/prva.jpeg" alt="wedding" style="width:100%">
+                <h3>Dreamy wedding</h3>
+              </div>
+              <div class="content">
+                <img src="/images/wedding.jpg" alt="wedding" style="width:100%">
+                <h3>Dreamy wedding next to Rimska bridge</h3>
+              </div>
+              <div class="content">
+                <img src="/images/jajce1.png" alt="wedding" style="width:100%">
+                <h3>Perfect postcard</h3>
+              </div>
+        </div>
+        <div class="svg">
+            <h4>All photos are made by <img src="/images/copy.svg" alt="svg" style="width:10px;"> Merima Turanović, and therefore copying and uploading is not allowed.</h4>
+        </div>
+    
+</body>
+</html>

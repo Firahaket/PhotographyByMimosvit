@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="css\main.css">
+    <title>Mimosvit Photography</title>
+</head>
+<body>
+    <script type="text/JavaScript" src="main.js"></script>
+
+    <div class="hero">
+        <div class="container">
+            <a href="index.html" class="logo">Mimosvit<span>Photography</span></a>
+        </div>
+        <div class="navbar">
+            <div id="nav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                 
+                <div class="first">
+                    <a href="html\about.html">About</a>
+                    <a href="html\service.html">Service</a>
+                    <a href="html\blog.html">Review</a>
+                    <a href="html\contact.html">Contact</a>
+                </div>
+            </div>
+            <span class="menu" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <div class="middle">
+          <h2>Do you want to keep your memories?</h2>
+          <hr>
+          <p><a href="/html/service.html" title="Click to follow link">Try it now</a></p>
+        </div>
+        <div class="owner">
+          <p>Merima Turanović</p>
+        </div>
+        <div class="ikonica">
+            <a href="/html/about.html"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+            </svg></a>
+        </div>
+      </div>
+
+
+      <style>
+          body,html{
+              height: 100%;
+              margin: 0;
+          }
+          .logo{
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            font-size: 1.3em;
+          }
+          a{
+              text-decoration: none;
+              color: white;
+          }
+          span{
+            color: var(--secondary-color);
+          }
+          .menu{
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 97%;
+            transition: translate(-50%,-50%);
+          } 
+          .navbar{
+             display: flex;
+             place-content: space-between;
+         }
+          .hero{
+              background-image: url('./images/prva.jpeg');
+              opacity: 1;
+              height: 100%;
+              background-position: center;
+              background-size: cover;
+              position: relative;
+              color: rgb(252, 247, 247);
+              font-size: 25px;
+          }
+          .container{
+              position: absolute;
+              top: 0;
+              left: 16px;
+          }
+          .owner{
+              position: absolute;
+              bottom: 0;
+              left: 16px;
+          }
+          .ikonica{
+              position: absolute;
+              bottom: 0;
+              right: 0;
+          }
+          .middle{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              text-align: center;
+          }
+          hr{
+              margin: auto;
+              width: 40%;
+          }
+          p{
+              font-size: 16px;
+          }
+
+      </style>
+
+</body>
+</html>

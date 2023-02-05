@@ -1,0 +1,231 @@
+:root {
+    --primary-color: #e6e9eb;
+    --secondary-color: #868a8a;
+    --tertiary-color: #dddadc;
+}
+
+body{
+    
+    background: var(--primary-color);
+    font-family: 'Rajdhani', sans-serif;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+
+    .header{
+        color: var(--primary-color);
+    }
+
+    .main{
+        background-color: black;
+    }
+
+    .row{
+        background-color: black;
+    }
+}
+.navbar{
+
+    padding: 1.2em;
+    
+    .logo{
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--secondary-color);
+        font-size: 1.8em;
+    }
+
+    span{
+        color: rgb(71, 71, 71);
+    }
+
+    .menu{
+        color: var(--secondary-color);
+    }
+    display: flex;
+    place-content: space-between;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.first {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 46px;
+    color: var(--primary-color);
+    display: block;
+    transition: 0.3s;
+  }
+  
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    font-weight: bold;
+  }
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+@media screen and (max-height: 500px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
+
+.switch{
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    left: 95%;
+    transform: translate(-50%,-50%);
+    
+
+    .switch input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(24, 23, 23);
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before{
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider{
+        background-color: #e3e7eb;
+    }
+    input:focus + .slider{
+        box-shadow: 0 0 1px #e8eaeb;
+    }
+    input:checked + .slider:before{
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+    .slider.round{
+        border-radius: 34px;
+    }
+    .slider.round:before{
+        border-radius: 70%;
+    }
+}
+.ikonica{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+}
+.ikonicadva{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+}
+////////////////////////review page///////////////
+.midde{
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+    .midde:not(checked)>input{
+        position: absolute;
+        top: -9999px;
+    }
+    .midde:not(checked)>label{
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+    }
+    .midde:not(ckecked) >label:before{
+        content: '★ ';
+    }
+    .midde>input:checked ~ label{
+        color: var(--secondary-color);
+    }
+    .midde:not(checked)>label:hover,.midde:not(checked)>label:hover~ label{
+        color: #353432;
+    }
+    .bottom{
+        overflow: hidden;
+        background-color: var(--secondary-color);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 35px;
+        color: white;
+        text-align: center;
+        
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+        }
+    }
+    h3, h2{
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
